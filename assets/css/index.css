@@ -83,18 +83,32 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 1rem 1rem;
+
+    overflow: hidden;
 }
 
 .nav>.href_layout>* {
+    transition-duration: .2s;
+    transition-property: padding, background-color, color;
+
     display: block;
-    background-color: rgb(84, 84, 158, .7);
+    background-color: rgb(84, 84, 158, 1);
     /* rgb(44, 41, 41) */
-    text-shadow: 1px 1px 1px yellow;
     color: lavender;
 
     padding: clamp(10px, 2vw, 15px);
     text-decoration: none;
 }
+
+.nav>.href_layout>a:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: aliceblue;
+    color: black;
+}
+
 
 .cover_page {
     display: flex;
@@ -104,7 +118,6 @@ a:hover {
     height: 100vh;
 
     background-image: url("../images/genesis_snow.jpg");
-
 }
 
 .cover_page>.column:nth-child(1) {
@@ -138,6 +151,11 @@ a:hover {
 }
 
 .strand_cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text-align: center;
     border: solid 1px white;
     text-shadow: 3px 3px 3px rgb(84, 84, 158);
@@ -149,13 +167,29 @@ a:hover {
 }
 
 .strand_tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+    width: fit-content;
+    transition-duration: .2s;
+    transition-property: padding, font-size, border-radius, transform;
+
     background-color: rgb(84, 84, 158);
     color: white;
     border-radius: 10px;
-    padding: 7px;
+    padding: .6rem;
     text-shadow: 1px 1px 1px black;
     border: solid 1px aliceblue;
     font-size: .7em;
+    margin: 1em;
+}
+
+.strand_tag:hover {
+    padding: .5rem 2rem;
+    font-size: .75em;
+    border-radius: 0;
 }
 
 .objective_cover {
@@ -354,6 +388,7 @@ a:hover {
 
 .footer > .socials_links {
     font-size: .8em;
+    margin: 1em;
 }
 
 .footer > .socials_links > .social_div {
@@ -371,6 +406,14 @@ a:hover {
     text-shadow: 1px 1px 1px black;
 
     min-width: 130px;
+
+    transition-duration: .2s;
+    transition-property: text-shadow, font-size, color;
+}
+.footer > .socials_links > .social_div > .icon_cover:hover {
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px black;
 }
 .footer > .socials_links > .social_div > .icon_cover > .icon {
     height: 2.5em;
@@ -387,7 +430,7 @@ a:hover {
 
 .bg_img_center {
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
 }
 

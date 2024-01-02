@@ -4,6 +4,7 @@ const background_on_effect = ["data-cover_page", "data-purpose_page"]
 background_on_effect.forEach((query, index) => {
     addEventListener("scroll", e => {
         const background = document.querySelector(`[${query}]`)
+        // background.style.backgroundPosition = `center ${background.getBoundingClientRect().top ** 1 / 10}px`
         background.style.backgroundPosition = `center ${background.getBoundingClientRect().top ** 1 / 10}px`
     })
 })
