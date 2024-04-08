@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: "Poppins";
     /* transition: all .3s ease; */
+    transition: background-position 1s ease;
 }
 
 *::selection {
@@ -68,7 +69,7 @@ a:hover {
 
     color: white;
     background-color: transparent;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
 }
 
 .word_quote {
@@ -118,6 +119,7 @@ a:hover {
     height: 100vh;
 
     background-image: url("../images/genesis_snow.jpg");
+    background-repeat: no-repeat;
 }
 
 .cover_page>.column:nth-child(1) {
@@ -235,7 +237,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 
-    background-image: url("../images/myself_0.jpg");
+    background-image: url("../images/portrait_of_me_mnl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
