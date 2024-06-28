@@ -160,12 +160,17 @@ a:hover {
 
     text-align: center;
     border: solid 1px white;
-    text-shadow: 3px 3px 3px rgb(84, 84, 158);
-    color: lavender;
-    padding: clamp(10px, 1vw, 20px);
+    padding: clamp(10px, 3vw, 30px);
     margin: 10px 0;
     font-size: clamp(1.5em, 2.5em, 5vw);
     text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* background-color: rgb(84, 84, 158); */
+    border-radius: 1rem;
+    color: lavender;
+    font-weight: 700;
+    text-shadow: 1px 2px 3px black;
 }
 
 .strand_tag {
@@ -177,6 +182,7 @@ a:hover {
     width: fit-content;
     transition-duration: .2s;
     transition-property: padding, font-size, border-radius, transform;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     background-color: rgb(84, 84, 158);
     color: white;
@@ -191,18 +197,22 @@ a:hover {
 .strand_tag:hover {
     padding: .5rem 2rem;
     font-size: .75em;
-    border-radius: 0;
+    transition-delay: .2s;
+    /* border-radius: 0; */
 }
 
 .objective_cover {
     border: solid 1px white;
     color: lavender;
-    text-shadow: 3px 3px 3px rgb(84, 84, 158);
+    font-weight: 700;
+    text-shadow: 1px 2px 3px black;
     padding: clamp(10px, 1vw, 20px);
     text-align: center;
     margin: 10px 0;
-    font-size: clamp(1em, 2em, 4vw);
+    font-size: clamp(1em, 1.5em, 3vw);
 
+    /* background-color: lavender; */
+    border-radius: 1rem;
 }
 
 .purpose_page {
@@ -370,7 +380,7 @@ a:hover {
     padding: 20px 5vw;
     gap: 10px;
 
-    background-color: rgba(129, 129, 181, 0.675);
+    background-color: rgb(77, 80, 211);
     color: aliceblue;
 }
 
@@ -424,6 +434,18 @@ a:hover {
 
 .genesis_profile {
     background-image: url("../images/genesis_snow_enhance.png");
+}
+
+.mdas_profile {
+    background-image: url('../images/MDAS_Assessment.png');
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.timecard_profile {
+    background-image: url("../images/timecard.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 .programming_profile {
@@ -495,5 +517,9 @@ a:hover {
 
     .footer > .socials_links > .social_div {
         gap: 5px;
+    }
+
+    .state_purpose {
+        border-radius: 50px 0 50px 0;
     }
 }
