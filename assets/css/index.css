@@ -436,6 +436,17 @@ a:hover {
     background-image: url("../images/genesis_snow_enhance.png");
 }
 
+.factbluff_profile {
+    background-image: url("../images/factbluff.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.collatz_profile {
+    background-image: url("../images/collatz.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
 .mdas_profile {
     background-image: url('../images/MDAS_Assessment.png');
     background-size: contain !important;
