@@ -4,6 +4,6 @@
 - Thanks for staying here! 💜
 
 # fixed
-- change header
+- fix layout
 
-# version: 0.0.2
+# version: 0.0.3
