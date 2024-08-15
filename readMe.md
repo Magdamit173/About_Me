@@ -4,6 +4,6 @@
 - Thanks for staying here! 💜
 
 # fixed
-- ambiguous info.
+- change header
 
-# version: 0.0.1
+# version: 0.0.2
