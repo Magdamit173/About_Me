@@ -464,6 +464,10 @@ a:hover {
     background-image: url("../images/Screenshot\ 2023-11-27\ 232106.png");
 }
 
+.proculator_profile {
+    background-image: url("../images/proculator.png");
+}
+
 .bg_img_center {
     background-size: cover;
     /* background-repeat: no-repeat; */
@@ -534,4 +538,9 @@ a:hover {
     .state_purpose {
         border-radius: 50px 0 50px 0;
     }
+}
+
+.canhover:hover {
+    scale: 1.1;
+    transition: all .2 ease;
 }
