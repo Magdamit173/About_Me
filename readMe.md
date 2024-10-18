@@ -4,4 +4,4 @@
 - Thanks for staying here! 💜
 - College version
 
-# version: 0.0.7
+# version: 0.0.8
